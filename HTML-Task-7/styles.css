@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+body {
+    color: black;
+    width: 1440px;
+}
+
+/* ---------------  CSS OF MAIN  --------------- */
+
+.base-div{
+    height: 77px;
+}
+
+section{
+    position: relative;
+    top: 154px;
+}
+
+.data img, .data h2, .data p {
+    font-weight: 400;
+    text-align: left;
+}
+
+.data-name, .data-price {
+    font-size: 24px;
+    line-height: 29.3px;
+    color: rgba(5, 5, 5, 1);
+}
+
+.data-info {
+    font-size: 14px;
+    line-height: 17.1px;
+    color: #888888;
+}
+
+.data {
+    position: relative;
+    display: grid;
+    row-gap: 10px;
+}
+
+.data-container {
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+
+    justify-content: center;
+
+    row-gap: 60px;
+    column-gap: 35px;
+}
+
+.data img:first-child {
+    width: 100%;
+    position: relative;
+}
+
+.data img:nth-child(2), .data img:nth-child(3) {
+    position: absolute;
+}
+
+.data img:nth-child(2) {
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    margin-right: 45px;
+}
+
+.data img:nth-child(3) {
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+header {
+    width: 1210px;
+    background-color: rgba(204, 204, 204, 1);
+    color: rgba(255, 255, 255, 1);
+    margin: auto;
+}
+
+.base-div, .span-c-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.span-c-div {
+    gap: 32px;
+    
+}
+
+.span-c-div span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+}
+
+.bottom-div {
+    margin-top: 200px;
+    border-bottom: solid 2px black;
+}
